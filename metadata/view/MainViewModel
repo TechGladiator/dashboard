@@ -6,10 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
+        "data": [
+            "{",
+            "    name: 'Dashboard'",
+            "}"
+        ],
         "designer|userAlias": "main",
         "designer|userClassName": "MainViewModel"
     },
     "configAlternates": {
+        "data": "object",
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },

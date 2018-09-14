@@ -7,7 +7,7 @@
             "frameworkVersion": "6.5.0.775"
         },
         "urlPrefixTemplate": "http://localhost:{port}/{path}",
-        "urlPrefix": "http://localhost:34127/",
+        "urlPrefix": "http://localhost:33767/",
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -23,7 +23,8 @@
         "genTimestamps": false,
         "cacheBust": false,
         "buildShouldOverwriteIndex": true,
-        "generateArchitectVersion": true
+        "generateArchitectVersion": true,
+        "installStatus": "Not Installed"
     },
     "xdsVersion": "4.2.1",
     "xdsBuild": 224,
