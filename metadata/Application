@@ -6,12 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "ProfitLoss"
+        ],
         "name": "Dashboard",
         "views": [
             "Main"
         ]
     },
     "configAlternates": {
+        "models": "typedarray",
         "name": "string",
         "views": "typedarray"
     },
