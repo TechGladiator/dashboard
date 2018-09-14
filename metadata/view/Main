@@ -6,6 +6,25 @@
     },
     "codeClass": null,
     "userConfig": {
+        "defaults": [
+            "{",
+            "    tabConfig: {",
+            "        responsiveConfig: {",
+            "            wide: {",
+            "                iconAlign: 'left',",
+            "                textAlign: 'left',",
+            "                flex: 0",
+            "            },",
+            "            tall: {",
+            "                iconAlign: 'top',",
+            "                textAlign: 'center',",
+            "                flex: 1",
+            "            }",
+            "        },",
+            "        plugins: 'responsive'",
+            "    }",
+            "}"
+        ],
         "designer|initialView": true,
         "designer|userAlias": "main",
         "designer|userClassName": "Main",
@@ -30,6 +49,7 @@
     },
     "configAlternates": {
         "header": "object",
+        "defaults": "object",
         "designer|initialView": "boolean",
         "designer|userAlias": "string",
         "designer|userClassName": "string",

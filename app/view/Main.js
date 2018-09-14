@@ -25,6 +25,23 @@ Ext.define('Dashboard.view.Main', {
     viewModel: {
         type: 'main'
     },
+    defaults: {
+        tabConfig: {
+            responsiveConfig: {
+                wide: {
+                    iconAlign: 'left',
+                    textAlign: 'left',
+                    flex: 0
+                },
+                tall: {
+                    iconAlign: 'top',
+                    textAlign: 'center',
+                    flex: 1
+                }
+            },
+            plugins: 'responsive'
+        }
+    },
     header: {
         layout: {
             align: 'stretchmax'
