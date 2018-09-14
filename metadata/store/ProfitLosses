@@ -1,0 +1,54 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userAlias": "profitlosses",
+        "designer|userClassName": "ProfitLosses",
+        "model": "ProfitLoss",
+        "storeId": "ProfitLosses"
+    },
+    "configAlternates": {
+        "autoLoad": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
+    "name": "MyJsonStore",
+    "designerId": "99d3ba59-a1cc-4210-92ac-c994a06417bb",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "resources/data/full_data.json"
+            },
+            "configAlternates": {
+                "url": "string"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "064defbe-78ed-4d81-aef3-246151e8c246",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyJsonReader",
+                    "designerId": "1acfdd12-67b4-4e14-adba-7575ff938530"
+                }
+            ]
+        }
+    ]
+}

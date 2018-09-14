@@ -11,8 +11,8 @@
             "    name: 'Dashboard'",
             "}"
         ],
-        "designer|userAlias": "main",
-        "designer|userClassName": "MainViewModel"
+        "designer|userAlias": "mainpanel",
+        "designer|userClassName": "MainPanelViewModel"
     },
     "configAlternates": {
         "data": "object",

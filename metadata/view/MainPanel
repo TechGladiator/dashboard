@@ -26,8 +26,8 @@
             "}"
         ],
         "designer|initialView": true,
-        "designer|userAlias": "main",
-        "designer|userClassName": "Main",
+        "designer|userAlias": "mainpanel",
+        "designer|userClassName": "MainPanel",
         "header": [
             "{",
             "    layout : {",

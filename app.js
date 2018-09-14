@@ -23,13 +23,16 @@ Ext.application({
     models: [
         'ProfitLoss'
     ],
+    stores: [
+        'ProfitLosses'
+    ],
     views: [
-        'Main'
+        'MainPanel'
     ],
     name: 'Dashboard',
 
     launch: function() {
-        Ext.create('Dashboard.view.Main', {renderTo: Ext.getBody()});
+        Ext.create('Dashboard.view.MainPanel', {renderTo: Ext.getBody()});
     }
 
 });

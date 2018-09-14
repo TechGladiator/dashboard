@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "main",
-        "designer|userClassName": "MainViewController"
+        "designer|userAlias": "mainpanel",
+        "designer|userClassName": "MainPanelViewController"
     },
     "configAlternates": {
         "designer|userAlias": "string",
