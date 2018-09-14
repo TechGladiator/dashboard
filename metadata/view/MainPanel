@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "activeTab": 1,
         "defaults": [
             "{",
             "    tabConfig: {",
@@ -56,13 +57,37 @@
         "headerPosition": "string",
         "tabBarHeaderPosition": "number",
         "tabRotation": "string",
-        "titleRotation": "string"
+        "titleRotation": "string",
+        "activeTab": "auto"
     },
     "name": "MyTabPanel",
     "designerId": "683bf62f-2d98-490d-94df-2b87ff016e0c",
     "viewControllerInstanceId": "b8ae5b0d-2650-41a0-affa-745dbcd4ce66",
     "viewModelInstanceId": "811f7a3e-20ca-418a-a01c-991635d3758a",
     "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "profitloss4",
+            "designerId": "d0eb7c4a-a9d9-4239-b197-0ca83b4b40b7",
+            "masterInstanceId": "a4978255-89b4-4af0-9a47-420d1ec529f9",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "TabConfig17",
+                    "designerId": "f7b33931-e9a9-4575-970d-3dd00299c364"
+                }
+            ]
+        },
         {
             "type": "Ext.tab.Bar",
             "reference": {

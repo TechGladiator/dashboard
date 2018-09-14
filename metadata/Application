@@ -14,7 +14,8 @@
             "ProfitLosses"
         ],
         "views": [
-            "MainPanel"
+            "MainPanel",
+            "ProfitLoss"
         ]
     },
     "configAlternates": {

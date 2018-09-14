@@ -19,6 +19,9 @@ Ext.define('Dashboard.view.MainPanel', {
 
     requires: [
         'Dashboard.view.MainPanelViewModel',
+        'Dashboard.view.ProfitLoss',
+        'Ext.grid.Panel',
+        'Ext.tab.Tab',
         'Ext.tab.Bar'
     ],
 
@@ -56,9 +59,15 @@ Ext.define('Dashboard.view.MainPanel', {
     },
     headerPosition: 'left',
     titleRotation: '0',
+    activeTab: 1,
     tabBarHeaderPosition: 1,
     tabRotation: '0',
 
+    items: [
+        {
+            xtype: 'profitloss'
+        }
+    ],
     tabBar: {
         xtype: 'tabbar',
         flex: 1
