@@ -1,0 +1,63 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "main",
+        "designer|userClassName": "Main",
+        "header": [
+            "{",
+            "    layout : {",
+            "        align : 'stretchmax'",
+            "    },",
+            "    iconCls : 'exec-header-icon',",
+            "    title : {",
+            "        text      : 'MyBiz',",
+            "        textAlign : 'center',",
+            "        flex      : 0,",
+            "        minWidth  : 160",
+            "    }",
+            "}"
+        ],
+        "headerPosition": "left",
+        "tabBarHeaderPosition": 1,
+        "tabRotation": "0",
+        "titleRotation": "0"
+    },
+    "configAlternates": {
+        "header": "object",
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "headerPosition": "string",
+        "tabBarHeaderPosition": "number",
+        "tabRotation": "string",
+        "titleRotation": "string"
+    },
+    "name": "MyTabPanel",
+    "designerId": "683bf62f-2d98-490d-94df-2b87ff016e0c",
+    "viewControllerInstanceId": "b8ae5b0d-2650-41a0-affa-745dbcd4ce66",
+    "viewModelInstanceId": "811f7a3e-20ca-418a-a01c-991635d3758a",
+    "cn": [
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "flex": 1
+            },
+            "configAlternates": {
+                "flex": "number"
+            },
+            "name": "MyTabBar",
+            "designerId": "3ed86b34-223f-4e0f-9048-7a54457b1eb2"
+        }
+    ]
+}
