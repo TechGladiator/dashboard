@@ -74,6 +74,14 @@ Ext.define('Dashboard.view.MainPanel', {
                 xtype: 'tab',
                 width: 107
             }
+        },
+        {
+            xtype: 'panel',
+            title: 'Customer Feedback',
+            tabConfig: {
+                xtype: 'tab',
+                width: 138
+            }
         }
     ]
 

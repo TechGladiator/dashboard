@@ -109,6 +109,40 @@
                     "designerId": "79c66812-6b33-4f33-bf24-c5edd03f30f1"
                 }
             ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Customer Feedback"
+            },
+            "configAlternates": {
+                "title": "string"
+            },
+            "name": "MyPanel",
+            "designerId": "6b56b239-e316-4240-a656-31443b9aedcf",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 138
+                    },
+                    "configAlternates": {
+                        "width": "auto"
+                    },
+                    "name": "TabConfig7",
+                    "designerId": "679a17eb-ed95-4efb-98d7-a1ec78b41d85"
+                }
+            ]
         }
     ]
 }
