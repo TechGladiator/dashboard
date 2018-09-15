@@ -7,7 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "ProfitLoss"
+            "ProfitLoss",
+            "metaprofitloss"
         ],
         "name": "Dashboard",
         "stores": [

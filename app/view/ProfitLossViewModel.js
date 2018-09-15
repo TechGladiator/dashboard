@@ -15,6 +15,25 @@
 
 Ext.define('Dashboard.view.ProfitLossViewModel', {
     extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.profitloss'
+    alias: 'viewmodel.profitloss',
+
+    requires: [
+        'Ext.data.Store',
+        'Ext.data.proxy.Ajax'
+    ],
+
+    stores: {
+        metaProfitLoss: {
+            autoLoad: true,
+            model: 'Dashboard.model.metaprofitloss',
+            proxy: {
+                type: 'ajax',
+                url: 'resources/data/meta_data.json'
+            },
+            listeners: {
+                load: 'onMetaDataLoad'
+            }
+        }
+    }
 
 });

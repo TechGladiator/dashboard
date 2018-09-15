@@ -19,6 +19,7 @@ Ext.define('Dashboard.view.ProfitLoss', {
 
     requires: [
         'Dashboard.view.ProfitLossViewModel',
+        'Dashboard.view.ProfitLossViewController',
         'Ext.view.Table',
         'Ext.grid.column.Column',
         'Ext.toolbar.Toolbar',
@@ -26,6 +27,7 @@ Ext.define('Dashboard.view.ProfitLoss', {
         'Ext.menu.Menu'
     ],
 
+    controller: 'profitloss',
     viewModel: {
         type: 'profitloss'
     },

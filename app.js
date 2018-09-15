@@ -21,7 +21,8 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'ProfitLoss'
+        'ProfitLoss',
+        'metaprofitloss'
     ],
     stores: [
         'ProfitLosses'
