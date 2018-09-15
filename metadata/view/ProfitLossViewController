@@ -13,5 +13,51 @@
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "designerId": "05c7e6fe-e44a-41fb-90b2-fca2528daced"
+    "designerId": "05c7e6fe-e44a-41fb-90b2-fca2528daced",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onRegionItemClick",
+                "implHandler": [
+                    "var view = this.getView(),",
+                    "    filter = {",
+                    "        // The id ensures that this filter will be replaced by subsequent calls",
+                    "        // to this method (while leaving others in place).",
+                    "        id       : 'regionFilter',",
+                    "        property : 'region_filter',",
+                    "        operator : 'in',",
+                    "        value    : []",
+                    "    },",
+                    "    regionMenu = this.lookupReference('regionsButton').menu;",
+                    "// note before we had set the reference on our button to regionsButton.  This is how we'll gain access to that component",
+                    "",
+                    "regionMenu.items.each(function (item) {",
+                    "    if (item.checked) {",
+                    "        filter.value.push(item.value);",
+                    "    }",
+                    "});",
+                    "",
+                    "if (filter.value.length === regionMenu.items.length) {",
+                    "    // No need for a filter that includes everything, so remove it (in case it",
+                    "    // was there - harmless if it wasn't)",
+                    "    view.store.getFilters().removeByKey(filter.id);",
+                    "} else {",
+                    "    view.store.getFilters().add(filter);",
+                    "}"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onRegionItemClick",
+            "designerId": "c63a287a-433c-4038-ab44-bbd916acd83b"
+        }
+    ]
 }

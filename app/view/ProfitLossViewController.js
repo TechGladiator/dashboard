@@ -17,8 +17,76 @@ Ext.define('Dashboard.view.ProfitLossViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.profitloss',
 
-    onMetaDataLoad: function(store, records, successful, operation, eOpts) {
+    onRegionItemClick: function() {
+        var view = this.getView(),
+            filter = {
+                // The id ensures that this filter will be replaced by subsequent calls
+                // to this method (while leaving others in place).
+                id       : 'regionFilter',
+                property : 'region_filter',
+                operator : 'in',
+                value    : []
+            },
+            regionMenu = this.lookupReference('regionsButton').menu;
+        // note before we had set the reference on our button to regionsButton.  This is how we'll gain access to that component
 
+        regionMenu.items.each(function (item) {
+            if (item.checked) {
+                filter.value.push(item.value);
+            }
+        });
+
+        if (filter.value.length === regionMenu.items.length) {
+            // No need for a filter that includes everything, so remove it (in case it
+            // was there - harmless if it wasn't)
+            view.store.getFilters().removeByKey(filter.id);
+        } else {
+            view.store.getFilters().add(filter);
+        }
+    },
+
+    onMetaDataLoad: function(store, records, successful, operation, eOpts) {
+        var me = this,
+            references = me.getReferences(),
+            view = me.getView(),
+            items = [],
+            columns = [ view.regionColumn ];
+
+        // iterate each record in the store
+        store.each(function (metaRecord) {
+            var type = metaRecord.data.type,
+                value = metaRecord.data.value,
+
+                menuItem = {
+                    checked     : true,
+                    hideOnClick : false
+                };
+
+            // we only care about region data
+            if (type === 'region') {
+                items.push(Ext.apply({
+                    text  : metaRecord.data.display,
+                    value : value,
+                    type  : type,
+
+                    listeners : {
+                        click : me.onRegionItemClick,
+                        scope : me
+                    }
+                },menuItem));
+            }
+        });
+
+        items.sort(function (lhs, rhs) {
+            return (lhs.text < rhs.text) ? -1 : ((rhs.text < lhs.text) ? 1 : 0);
+        });
+
+        // We want to tinker with the UI in batch so we don't trigger multiple layouts
+        Ext.batchLayouts(function () {
+            references.regionsButton.menu.add(items);
+
+            view.store.load(); // displays loadMask so include in layout batch
+        });
     }
 
 });
