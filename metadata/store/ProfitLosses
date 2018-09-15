@@ -20,7 +20,7 @@
         "storeId": "string"
     },
     "name": "MyJsonStore",
-    "designerId": "99d3ba59-a1cc-4210-92ac-c994a06417bb",
+    "designerId": "7f19470b-3b91-4f23-a898-ad885dc4f121",
     "cn": [
         {
             "type": "Ext.data.proxy.Ajax",
@@ -36,7 +36,7 @@
                 "url": "string"
             },
             "name": "MyAjaxProxy",
-            "designerId": "064defbe-78ed-4d81-aef3-246151e8c246",
+            "designerId": "b8561b73-da69-41f2-99ac-4f5de752ff10",
             "cn": [
                 {
                     "type": "Ext.data.reader.Json",
@@ -46,7 +46,7 @@
                     },
                     "codeClass": null,
                     "name": "MyJsonReader",
-                    "designerId": "1acfdd12-67b4-4e14-adba-7575ff938530"
+                    "designerId": "91dd77a0-abde-4e4a-9697-14b3011dce5e"
                 }
             ]
         }

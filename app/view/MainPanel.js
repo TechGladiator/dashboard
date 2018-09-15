@@ -20,9 +20,9 @@ Ext.define('Dashboard.view.MainPanel', {
     requires: [
         'Dashboard.view.MainPanelViewModel',
         'Dashboard.view.ProfitLoss',
+        'Ext.tab.Bar',
         'Ext.grid.Panel',
-        'Ext.tab.Tab',
-        'Ext.tab.Bar'
+        'Ext.tab.Tab'
     ],
 
     viewModel: {
@@ -59,18 +59,18 @@ Ext.define('Dashboard.view.MainPanel', {
     },
     headerPosition: 'left',
     titleRotation: '0',
-    activeTab: 1,
+    activeTab: 0,
     tabBarHeaderPosition: 1,
     tabRotation: '0',
 
+    tabBar: {
+        xtype: 'tabbar',
+        flex: 1
+    },
     items: [
         {
             xtype: 'profitloss'
         }
-    ],
-    tabBar: {
-        xtype: 'tabbar',
-        flex: 1
-    }
+    ]
 
 });

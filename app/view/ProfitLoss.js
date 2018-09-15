@@ -28,6 +28,7 @@ Ext.define('Dashboard.view.ProfitLoss', {
     },
     viewModel: 'profitloss',
     title: 'Profit and Loss',
+    rowViewModel: 'profitloss',
     store: 'ProfitLosses',
 
     columns: [

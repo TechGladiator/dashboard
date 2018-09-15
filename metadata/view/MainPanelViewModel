@@ -6,18 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "data": [
-            "{",
-            "    name: 'Dashboard'",
-            "}"
-        ],
         "designer|userAlias": "mainpanel",
         "designer|userClassName": "MainPanelViewModel"
     },
     "configAlternates": {
-        "data": "object",
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "designerId": "811f7a3e-20ca-418a-a01c-991635d3758a"
+    "designerId": "51e7b7c5-d604-445b-9202-88a653924cef"
 }

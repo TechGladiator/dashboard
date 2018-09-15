@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "activeTab": 1,
+        "activeTab": 0,
         "defaults": [
             "{",
             "    tabConfig: {",
@@ -50,44 +50,21 @@
     },
     "configAlternates": {
         "header": "object",
-        "defaults": "object",
         "designer|initialView": "boolean",
         "designer|userAlias": "string",
         "designer|userClassName": "string",
-        "headerPosition": "string",
         "tabBarHeaderPosition": "number",
         "tabRotation": "string",
         "titleRotation": "string",
+        "defaults": "object",
+        "headerPosition": "string",
         "activeTab": "auto"
     },
     "name": "MyTabPanel",
-    "designerId": "683bf62f-2d98-490d-94df-2b87ff016e0c",
-    "viewControllerInstanceId": "b8ae5b0d-2650-41a0-affa-745dbcd4ce66",
-    "viewModelInstanceId": "811f7a3e-20ca-418a-a01c-991635d3758a",
+    "designerId": "35e29ece-e082-4e0a-ab6a-15d7fcdd7997",
+    "viewControllerInstanceId": "0a2b42ec-4926-46ca-b8fb-771a89c5fab8",
+    "viewModelInstanceId": "51e7b7c5-d604-445b-9202-88a653924cef",
     "cn": [
-        {
-            "type": "linkedinstance",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "name": "profitloss4",
-            "designerId": "d0eb7c4a-a9d9-4239-b197-0ca83b4b40b7",
-            "masterInstanceId": "a4978255-89b4-4af0-9a47-420d1ec529f9",
-            "cn": [
-                {
-                    "type": "Ext.tab.Tab",
-                    "reference": {
-                        "name": "tabConfig",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "name": "TabConfig17",
-                    "designerId": "f7b33931-e9a9-4575-970d-3dd00299c364"
-                }
-            ]
-        },
         {
             "type": "Ext.tab.Bar",
             "reference": {
@@ -101,8 +78,31 @@
             "configAlternates": {
                 "flex": "number"
             },
-            "name": "MyTabBar",
-            "designerId": "3ed86b34-223f-4e0f-9048-7a54457b1eb2"
+            "name": "MyTabBar1",
+            "designerId": "47061f36-90ca-4594-a1d1-18571025e23c"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "profitloss11",
+            "designerId": "d88b0a34-c4db-438b-9633-3c0bb26ef7fd",
+            "masterInstanceId": "eb454fb9-dc21-4b92-93f0-957034462908",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "TabConfig44",
+                    "designerId": "79c66812-6b33-4f33-bf24-c5edd03f30f1"
+                }
+            ]
         }
     ]
 }

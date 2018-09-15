@@ -15,10 +15,6 @@
 
 Ext.define('Dashboard.view.MainPanelViewModel', {
     extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.mainpanel',
-
-    data: {
-        name: 'Dashboard'
-    }
+    alias: 'viewmodel.mainpanel'
 
 });
