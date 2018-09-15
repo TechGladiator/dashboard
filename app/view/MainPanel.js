@@ -69,7 +69,11 @@ Ext.define('Dashboard.view.MainPanel', {
     },
     items: [
         {
-            xtype: 'profitloss'
+            xtype: 'profitloss',
+            tabConfig: {
+                xtype: 'tab',
+                width: 107
+            }
         }
     ]
 

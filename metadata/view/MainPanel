@@ -99,6 +99,12 @@
                         "type": "object"
                     },
                     "codeClass": null,
+                    "userConfig": {
+                        "width": 107
+                    },
+                    "configAlternates": {
+                        "width": "auto"
+                    },
                     "name": "TabConfig44",
                     "designerId": "79c66812-6b33-4f33-bf24-c5edd03f30f1"
                 }
