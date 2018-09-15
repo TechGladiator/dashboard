@@ -251,6 +251,66 @@
             },
             "name": "MyColumn13",
             "designerId": "3bff4fa0-9d22-4145-9a1c-e8d2e21f4682"
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "configAlternates": {
+                "dock": "string"
+            },
+            "name": "MyToolbar",
+            "designerId": "37220f68-d77f-4211-bdeb-1bab54a51e05",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "reference": "regionsButton",
+                        "text": "Region",
+                        "textAlign": "left"
+                    },
+                    "configAlternates": {
+                        "layout|flex": "number",
+                        "reference": "string",
+                        "text": "string",
+                        "textAlign": "string"
+                    },
+                    "name": "MyButton",
+                    "designerId": "0698d831-82ed-4050-a80d-383693ec9d2f",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "menu",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "region-menu",
+                                "width": 200
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyMenu",
+                            "designerId": "4ffa6e6b-3c75-4777-bbc6-af93832cd977"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

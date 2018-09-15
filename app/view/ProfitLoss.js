@@ -20,7 +20,10 @@ Ext.define('Dashboard.view.ProfitLoss', {
     requires: [
         'Dashboard.view.ProfitLossViewModel',
         'Ext.view.Table',
-        'Ext.grid.column.Column'
+        'Ext.grid.column.Column',
+        'Ext.toolbar.Toolbar',
+        'Ext.button.Button',
+        'Ext.menu.Menu'
     ],
 
     viewModel: {
@@ -91,6 +94,25 @@ Ext.define('Dashboard.view.ProfitLoss', {
             xtype: 'gridcolumn',
             dataIndex: 'region',
             text: 'Region'
+        }
+    ],
+    dockedItems: [
+        {
+            xtype: 'toolbar',
+            dock: 'top',
+            items: [
+                {
+                    xtype: 'button',
+                    reference: 'regionsButton',
+                    text: 'Region',
+                    textAlign: 'left',
+                    menu: {
+                        xtype: 'menu',
+                        id: 'region-menu',
+                        width: 200
+                    }
+                }
+            ]
         }
     ]
 
